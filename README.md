@@ -15,4 +15,4 @@ The user can add and delete the to-do list or set it disabled.
 
 # Todo View
 
-<img src="./images/screen-view.gif">
+<img src="images/screen-view.gif">
