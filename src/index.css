@@ -1,13 +1,84 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: cornflowerblue;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+  color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* todoField */
+
+.todoField {
+  display: flex;
+  align-items: center;
+}
+
+.todoField .todoField-input {
+  height: 35px;
+  border: 0;
+  outline: none;
+  padding: 0 10px;
+}
+
+.todoField .todoField-btn {
+  height: 35px;
+  border: 0;
+  background-color: coral;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* todos */
+
+.todos {
+  list-style-type: none;
+  padding: 0;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.todos::-webkit-scrollbar {
+  width: 5px;
+  background-color: coral;
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background-color: #eee;
+}
+
+.todos .todos-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.todos .todos-item .todos-text {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.todos .todos-item .todos-text.todos-text-done {
+  text-decoration: line-through;
+}
+
+.todos .todos-buttons button {
+  margin-left: 10px;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
